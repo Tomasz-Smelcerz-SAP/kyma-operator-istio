@@ -1,0 +1,24 @@
+# permissions for end users to edit istioconfigurations.
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRole
+metadata:
+  name: istioconfiguration-editor-role
+rules:
+- apiGroups:
+  - kyma.kyma-project.io
+  resources:
+  - istioconfigurations
+  verbs:
+  - create
+  - delete
+  - get
+  - list
+  - patch
+  - update
+  - watch
+- apiGroups:
+  - kyma.kyma-project.io
+  resources:
+  - istioconfigurations/status
+  verbs:
+  - get
