@@ -43,6 +43,10 @@ The Steps:
 
 - start the cluster (e.g: k3d cluster create kyma)
 - cd k8s-api
-- make install
-
+- make install (installs CRDs)
+- prepare sample file in config/samples/kyma_v1alpha1_istioconfiguration.yaml
+- cd operator
+- make run
+- apply the sample file from k8s-api/config/samples/kyma_v1alpha1_istioconfiguration.yaml
+- observe how the controller reacts to the creation and deletion of the sample CR instance
 
