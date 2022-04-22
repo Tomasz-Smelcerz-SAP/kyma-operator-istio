@@ -11,7 +11,7 @@ This repository layout allows for building the project using Kubebuilder with ju
 The manual steps are necessary because Kubebuilder [does not support such model yet](https://github.com/kubernetes-sigs/kubebuilder/blob/master/docs/using_an_external_type.md), but also does not completely prevent it.
 
 
-The Steps to setup the entire thing:
+The steps to setup the entire thing:
 
 1) Setup the github repository
 
