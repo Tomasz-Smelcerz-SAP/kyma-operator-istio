@@ -6,9 +6,9 @@ This repository hosts a sample operator. This is a dummy operator, the name (Ist
 
 There are two golang modules here: one for the public k8s API of the operator, the second one with the operator implementation.
 The split allows for other projects to import just the API without having to import all the dependencies/libraries of the operator implementation.
-This repository layout allows for building the project using Kubebuilder with just minimum amount of manual "patching".
 
-This is because Kubebuilder [does not support such model yet](https://github.com/kubernetes-sigs/kubebuilder/blob/master/docs/using_an_external_type.md), but also does not "block" it.
+This repository layout allows for building the project using Kubebuilder with just minimum amount of manual "patching".
+The manual steps are necessary because Kubebuilder [does not support such model yet](https://github.com/kubernetes-sigs/kubebuilder/blob/master/docs/using_an_external_type.md), but also does not completely prevent it.
 
 
 The Steps to setup the entire thing:
